@@ -41,6 +41,7 @@ function getFiltered() {
 
 function render() {
   const items = getFiltered();
+  grid.innerHTML = "";
   items.forEach((p) => {
     const card = document.createElement("div");
     card.className = "card";
